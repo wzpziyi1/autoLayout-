@@ -11,10 +11,11 @@
 		098370681B4BC018003AF4C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 098370671B4BC018003AF4C2 /* AppDelegate.m */; };
 		0983706B1B4BC018003AF4C2 /* autoLayout____.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 098370691B4BC018003AF4C2 /* autoLayout____.xcdatamodeld */; };
 		0983706E1B4BC018003AF4C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0983706D1B4BC018003AF4C2 /* ViewController.m */; };
-		098370711B4BC018003AF4C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0983706F1B4BC018003AF4C2 /* Main.storyboard */; };
 		098370731B4BC018003AF4C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098370721B4BC018003AF4C2 /* Images.xcassets */; };
 		098370761B4BC018003AF4C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098370741B4BC018003AF4C2 /* LaunchScreen.xib */; };
 		098370821B4BC019003AF4C2 /* autoLayout____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098370811B4BC019003AF4C2 /* autoLayout____Tests.m */; };
+		0983708C1B4BC072003AF4C2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0983708B1B4BC072003AF4C2 /* ViewController.xib */; };
+		0983708F1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0983708E1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +37,14 @@
 		0983706A1B4BC018003AF4C2 /* autoLayout____.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "autoLayout____.xcdatamodel"; sourceTree = "<group>"; };
 		0983706C1B4BC018003AF4C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0983706D1B4BC018003AF4C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		098370701B4BC018003AF4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		098370721B4BC018003AF4C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		098370751B4BC018003AF4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0983707B1B4BC019003AF4C2 /* autoLayout登陆动画Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "autoLayout登陆动画Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		098370801B4BC019003AF4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098370811B4BC019003AF4C2 /* autoLayout____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "autoLayout____Tests.m"; sourceTree = "<group>"; };
+		0983708B1B4BC072003AF4C2 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0983708D1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Extend.h"; sourceTree = "<group>"; };
+		0983708E1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Extend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +86,13 @@
 		098370611B4BC018003AF4C2 /* autoLayout登陆动画 */ = {
 			isa = PBXGroup;
 			children = (
+				0983708D1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.h */,
+				0983708E1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.m */,
 				098370661B4BC018003AF4C2 /* AppDelegate.h */,
 				098370671B4BC018003AF4C2 /* AppDelegate.m */,
 				0983706C1B4BC018003AF4C2 /* ViewController.h */,
 				0983706D1B4BC018003AF4C2 /* ViewController.m */,
-				0983706F1B4BC018003AF4C2 /* Main.storyboard */,
+				0983708B1B4BC072003AF4C2 /* ViewController.xib */,
 				098370721B4BC018003AF4C2 /* Images.xcassets */,
 				098370741B4BC018003AF4C2 /* LaunchScreen.xib */,
 				098370691B4BC018003AF4C2 /* autoLayout____.xcdatamodeld */,
@@ -202,8 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				098370711B4BC018003AF4C2 /* Main.storyboard in Resources */,
 				098370761B4BC018003AF4C2 /* LaunchScreen.xib in Resources */,
+				0983708C1B4BC072003AF4C2 /* ViewController.xib in Resources */,
 				098370731B4BC018003AF4C2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0983708F1B4BCD12003AF4C2 /* NSLayoutConstraint+Extend.m in Sources */,
 				0983706B1B4BC018003AF4C2 /* autoLayout____.xcdatamodeld in Sources */,
 				098370681B4BC018003AF4C2 /* AppDelegate.m in Sources */,
 				0983706E1B4BC018003AF4C2 /* ViewController.m in Sources */,
@@ -248,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0983706F1B4BC018003AF4C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				098370701B4BC018003AF4C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		098370741B4BC018003AF4C2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

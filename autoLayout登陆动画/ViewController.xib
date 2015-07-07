@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="accountField" destination="EDz-5E-EPg" id="c0m-Fe-p5I"/>
+                <outlet property="iconImageView" destination="1SY-Zk-lcI" id="WeS-1h-xwl"/>
+                <outlet property="pwdField" destination="al5-W4-XJC" id="zid-4H-G98"/>
+                <outlet property="view" destination="iN0-l3-epB" id="onn-Oi-GrZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mam" translatesAutoresizingMaskIntoConstraints="NO" id="1SY-Zk-lcI">
+                    <rect key="frame" x="85" y="125" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="CJk-Qy-hDf"/>
+                        <constraint firstAttribute="height" constant="150" id="FXO-1u-V72"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号：" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EDz-5E-EPg">
+                    <rect key="frame" x="42" y="324" width="237" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码：" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="al5-W4-XJC">
+                    <rect key="frame" x="42" y="379" width="237" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="701-me-yev">
+                    <rect key="frame" x="42" y="425" width="237" height="30"/>
+                    <state key="normal" title="登陆">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickLoginButton:" destination="-1" eventType="touchUpInside" id="sVx-kS-au7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.32026184455223994" green="1" blue="0.44354930365629053" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="1SY-Zk-lcI" secondAttribute="centerY" constant="40" id="3MG-ja-L2D"/>
+                <constraint firstItem="701-me-yev" firstAttribute="top" secondItem="al5-W4-XJC" secondAttribute="bottom" constant="16" id="4cS-e6-wPH"/>
+                <constraint firstItem="EDz-5E-EPg" firstAttribute="top" secondItem="1SY-Zk-lcI" secondAttribute="bottom" constant="49" id="AkL-6A-bc3"/>
+                <constraint firstItem="EDz-5E-EPg" firstAttribute="centerX" secondItem="al5-W4-XJC" secondAttribute="centerX" id="B7r-zw-iZe"/>
+                <constraint firstItem="701-me-yev" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="G6A-88-pbs"/>
+                <constraint firstAttribute="trailing" secondItem="al5-W4-XJC" secondAttribute="trailing" constant="41" id="I1p-6I-J71"/>
+                <constraint firstItem="EDz-5E-EPg" firstAttribute="centerX" secondItem="1SY-Zk-lcI" secondAttribute="centerX" id="LuI-eY-fmb"/>
+                <constraint firstItem="al5-W4-XJC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="PJ7-iL-Qmm"/>
+                <constraint firstAttribute="centerX" secondItem="1SY-Zk-lcI" secondAttribute="centerX" id="XTc-he-g8f"/>
+                <constraint firstItem="al5-W4-XJC" firstAttribute="centerX" secondItem="701-me-yev" secondAttribute="centerX" id="YiK-bJ-3x2"/>
+                <constraint firstAttribute="trailing" secondItem="EDz-5E-EPg" secondAttribute="trailing" constant="41" id="aYm-qZ-1Qs"/>
+                <constraint firstAttribute="trailing" secondItem="701-me-yev" secondAttribute="trailing" constant="41" id="e0S-TO-7Kw"/>
+                <constraint firstItem="EDz-5E-EPg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="lsK-rl-N0t"/>
+                <constraint firstItem="al5-W4-XJC" firstAttribute="top" secondItem="EDz-5E-EPg" secondAttribute="bottom" constant="25" id="qtZ-cD-rKH"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="312" y="208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mam" width="155" height="155"/>
+    </resources>
+</document>
